@@ -1,6 +1,7 @@
 # openbfdd
 
 Upstream: https://github.com/dyninc/OpenBFDD
+My repository: https://github.com/biwhite/docker-openbfdd
 WIKI: https://github.com/dyninc/OpenBFDD/wiki
 
 ### OpenBFDD Container
@@ -21,7 +22,7 @@ docker run -d --name openbfdd \
 
 # Config
 This container runs bfdd-daemon from openbfdd, reading a config file in /etc/openbfdd.conf.
-The file contains sets of commands as per bfdd-control syntax.
+The file contains sets of commands as per bfdd-control syntax.  A sample file is within the ```sample-openbfdd.conf``` file.
 
 # Get status of sessions
 ```docker exec openbfdd bfdd-control status```
