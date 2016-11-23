@@ -1,5 +1,5 @@
 #!/bin/sh
 # delayed load of bfdd-control commands, if contained within /etc/openbfdd.conf file
-sleep 5 && [ -f /etc/openbfdd.conf ] && /usr/local/bin/bfdd-control load /etc/openbfdd.conf &
+sleep 5 && [ -f /etc/openbfdd/openbfdd.conf ] && /usr/local/bin/bfdd-control load /etc/openbfdd/openbfdd.conf &
 #start daemon, blocking mode to s6 hangs onto it, if it quits, this run script re-runs
 /usr/local/bin/bfdd-beacon --nofork
